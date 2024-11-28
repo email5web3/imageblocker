@@ -1,7 +1,7 @@
 /**
  * ImageBlocker.js
  * A lightweight script to block external images in HTML5 emails.
- * Developed for Email 5 and Open Standards compliance.
+ * Developed by Email 5 for Open Email Standards compliance.
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,17 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 element.style.backgroundImage = "none"; // Remove background image
                 console.log(`Blocked external background image: ${urlMatch[1]}`);
             }
-        }
-    });
-
-    /**
-     * Block external images in linked stylesheets.
-     */
-    document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
-        const href = link.getAttribute("href");
-        if (href && !isAllowedDomain(href)) {
-            link.setAttribute("href", ""); // Prevent stylesheet loading
-            console.log(`Blocked external stylesheet: ${href}`);
         }
     });
 });
