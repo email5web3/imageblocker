@@ -13,4 +13,15 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ImageBlocker.git
+   git clone https://github.com/email5/imageblocker.git
+
+### Setup
+To include `ImageBlocker.js` in your HTML email or project, add the following script tag:
+
+   ```html
+   <script src="src/ImageBlocker.js"></script>
+
+Customize the list of trusted domains by editing the allowedDomains array in the script:
+
+   ```javascript
+   const allowedDomains = ["trustedcdn.com", "secure-site.org"];
