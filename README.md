@@ -1,6 +1,6 @@
 # ImageBlocker.js
 
-**ImageBlocker.js** is a lightweight, open-source JavaScript library designed to block external images in HTML5 emails, enhancing security by preventing unauthorized content from loading. It ensures only trusted domains are allowed for image and background image sources.
+**ImageBlocker.js** is a lightweight, open-source JavaScript library designed to block external images in HTML5 emails, enhancing security by preventing unauthorized content from rendering. It ensures only trusted domains are allowed for image and background image sources.
 
 ## Features
 
@@ -36,12 +36,16 @@ To include `ImageBlocker.js` in your HTML email or project:
 ## How It Works
 
 - Image Blocking: All `<img>` tags with `src` attributes pointing to untrusted domains are blocked and hidden from the email content.
-- Background Image Neutralization: Inline styles containing untrusted `background-image` URLs are neutralized.
+- Background Image Removal: Inline styles containing untrusted `background-image` URLs are neutralized.
 - Customizable: Easily define your list of trusted domains to fit your security requirements.
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your changes.
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Submit a pull request with your changes.
 
 ## License
 
